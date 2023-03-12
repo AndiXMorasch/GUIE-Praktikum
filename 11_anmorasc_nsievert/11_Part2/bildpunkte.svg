@@ -1,0 +1,12 @@
+<svg x="400px" y="200px" viewbox="0 0 400 200">
+    <!-- Fügen Sie hier die drei Kreise, drei Texte und das Rechteck ein.-->
+<text class="text" x="40" y="60">red   </text>
+<text class="text" x="25" y="80"> (#FF0000)</text>
+<text class="text" x="300" y="60">lime </text>
+<text class="text" x="280" y="80"> (#00FF00) </text>
+<text class="text" x="145" y="200">blue (#0000FF) </text>
+<circle id="eins" cx="160px" cy="70px" r="60px" />
+<circle id="zwei" cx="220px" cy="70px" r="60px" />
+<circle id="drei" cx="190px" cy="130px" r="60px" />
+<rect id="vier" x="40px" y="95px" height="10px" width="320px"/>
+</svg>

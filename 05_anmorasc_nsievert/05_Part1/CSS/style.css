@@ -1,0 +1,19 @@
+html {
+font-family: monospace;
+background-color: black;
+ display: grid;
+  justify-content: center;
+  align-items: center;
+   min-height: 100vh;
+    display: flex; 
+}
+
+h1 {
+  color: white;
+  font-size: 60px;
+  border: 1px solid blue;
+}
+
+.clock { 
+  color: white;
+}

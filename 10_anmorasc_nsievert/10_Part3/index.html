@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="de">
+    <head>
+        <title> Touch Gesten</title>
+
+
+        <link href = "./CSS/style.css" rel = "stylesheet">
+        <meta charset="UTF-8">
+    </head>
+    <body id="body" ontouchmove="wischen(event)"
+    ontouchstart="countTouches(event), tapped(event)" ontouchend="countTouches(event)" onclick="myFunction()">
+    <div class="website">
+        <div class="anzeigefeld">
+            <div class="t">
+                <div class="text" id="bold">
+                     Gesture recognized:
+                </div>
+                <div class="text" id="gesture">
+                    Gesture:
+                </div>
+                <div class="text" id="number">
+                    Total number:
+                </div>
+                <div class="text" id ="coordinates">
+                    Coordinates:
+                </div>
+                <div class="text" id="fingers">
+                    Current fingers on screen:
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./JS/function.js"></script>
+
+    </body>
+
+    <!-- Quellen:
+    https://stackoverflow.com/questions/1484506/random-color-generator
+    https://www.mediaevent.de/javascript/touch-events.html
+    https://www.w3schools.com/jsref/obj_touchevent.asp
+    https://developer.mozilla.org/en-US/docs/Web/API/Touch_events -->

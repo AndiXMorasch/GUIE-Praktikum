@@ -1,0 +1,136 @@
+html {
+	font-family: sans-serif;
+	background-image: url("https://www.hs-osnabrueck.de/fileadmin/Startseite-Slider/hs-os_web_slider_image_1920-2018-sep4.jpg") ;
+	background-position: top;
+	background-attachment:scroll;
+	background-repeat: no-repeat;
+	background-size:contain;
+}
+
+body {
+	color:black;
+	width: 60%;
+	margin: auto;
+	margin-top: 1%;
+	padding: 9px;
+}
+
+img {
+	width: 100%;
+}
+
+video {
+	width: 100%;
+}
+
+h6 {
+	display: none;
+}
+
+h1 {
+	font-size: 35px;
+	text-align: left;
+}
+
+h2 {
+	color: #2E2E2E;
+	text-shadow: 0.2em 0.2em 0.06em #787878;
+	background-color: aqua;
+	font-size: 29px;
+}
+
+h3 {
+	text-align: left;
+}
+
+.active {
+	pointer-events: none;
+	cursor: default;
+	text-decoration: none;
+	color: aqua;
+}
+
+.figInOneLine .left {
+	float: left;
+	width: 45%;
+	margin-right: 5%
+}
+
+.figInOneLine .right {
+	float: right;
+	width: 45%;
+	margin-left: 5%;
+}
+a{
+	color:white;
+}
+figure {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5%;
+}
+
+figcaption {
+	color: #00FFFF;
+	font-size: 35px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.right figcaption {
+	color: #00FFFF;
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.left figcaption {
+	color: #00FFFF;
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+}
+
+nav table {
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 200px;
+	margin-top: 150px;
+	
+}
+
+
+nav table td {
+	color: hsla(350,50%,50%,0);
+	font-weight:bold;
+	background-color: #A4A4A4;
+}
+
+.separator {
+	background: hsla(99,99%,99%,0);
+	width: 1%;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	border-right: 5px;
+	border-left: 5px;
+}
+
+section table {
+	width: 100%;
+	border: 2px;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+section table td {
+	border: 2px solid aqua;
+}
+
+section td {
+	width: 50%
+}

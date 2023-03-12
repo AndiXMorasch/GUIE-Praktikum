@@ -1,0 +1,19 @@
+.uk-section-secondary {
+    background: #30343F;
+  }
+
+  .uk-section-primary {
+    background: #D72638;
+  }
+
+  .uk-section-muted {
+    background: #E0E0E0;
+  }
+
+  .uk-text-danger {
+    color: #D72638 !important;
+  }
+
+  .uk-text-danger:hover {
+    color: blue;
+  }

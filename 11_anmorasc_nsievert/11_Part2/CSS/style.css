@@ -1,0 +1,37 @@
+body{
+	width:90%;
+	margin:auto;
+	margin-top:2%;
+}
+svg{
+	width:100%;
+	background-color:black;
+}
+
+circle {
+	mix-blend-mode: screen;
+	}
+
+#eins {
+	fill: red;
+}
+
+#zwei {
+	fill: lime;
+}
+
+#drei {
+	fill: blue;
+}
+
+rect{
+	mix-blend-mode:exclusion;
+}
+
+#vier{
+	fill: orange;
+}
+
+.text{
+	fill: white;
+}

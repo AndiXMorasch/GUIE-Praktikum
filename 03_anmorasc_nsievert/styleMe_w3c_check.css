@@ -1,0 +1,121 @@
+html {
+	background-color: DimGray;
+}
+
+body {
+	width: 60%;
+	margin: auto;
+	margin-top: 1%;
+	background-color: white;
+	padding: 9px;
+}
+
+img {
+	width: 84%;
+	margin-left: 8%;
+	margin-right: 8%;
+}
+
+video {
+	width: 100%;
+}
+
+h6 {
+	display: none;
+}
+
+h1 {
+	color: red;
+}
+
+h2 {
+	color: #2E2E2E;
+	text-shadow: 0.2em 0.2em 0.06em #787878;
+	background-color: #BDBDBD;
+	font-size: 29px;
+}
+
+h3 {
+	color: #C0C0C0;
+	background-color: yellow;
+}
+
+.active {
+	pointer-events: none;
+	cursor: default;
+	text-decoration: none;
+	color: black;
+}
+
+.figInOneLine .left {
+	float: left;
+	width: 45%;
+	margin-left: 5%;
+}
+
+.figInOneLine .right {
+	float: right;
+	width: 45%;
+	margin-right: 5%;
+}
+
+figure {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 7%;
+}
+
+figcaption {
+	color: #00FFFF;
+	font-size: 25px;
+	text-align: center;
+}
+
+.right figcaption {
+	color: #00FFFF;
+	font-size: 25px;
+	text-align: center;
+}
+
+.left figcaption {
+	color: #00FFFF;
+	font-size: 25px;
+	text-align: center;
+}
+
+nav table {
+	width: 90%;
+	text-align: center;
+	text-transform: uppercase;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px
+}
+
+nav table td {
+	background-color: #A4A4A4;
+}
+
+.separator {
+	width: 5px;
+	background-color: black;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	border-right: 2px solid white;
+	border-left: 2px solid white;
+}
+
+section table {
+	width: 100%;
+	border: 2px solid black;
+	margin: auto;
+}
+
+section table td {
+	border: 2px solid aqua;
+}
+
+section td {
+	width: 50%
+}

@@ -1,0 +1,84 @@
+html {
+    display: flex;
+    justify-content: center;
+    background-color: bisque;
+}
+
+body {
+    background-color: rgba(252, 193, 209, 0.521);
+    border: 3px solid rgba(250, 184, 4, 0.959) ;
+    width: 60%;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+form {
+  display: grid;
+}
+
+label {
+    margin-top: 25px;
+    display: grid;
+    grid-column: 1/2;
+    grid-template-columns: 200px 1fr;
+    float: left;
+    padding-left: 24px;
+}
+
+.gender {
+  display:block;
+}
+
+#divers {
+  margin-left: 205px;
+}
+
+#männlich {
+  margin-left: 120px;
+}
+
+#weiblich {
+  margin-left: 205px;
+}
+
+input {
+    border-radius: 6px;
+    font-size: 1.4em;
+}
+
+#abschluss {
+  font-size: 1.4em;
+  border-radius: 6px;
+}
+
+#noten {
+  font-size: 1.4em;
+  border-radius: 6px;
+}
+
+textarea {
+    width: 250px;
+    height: 120px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    resize: none;
+}
+
+
+input[type=submit] {
+    background-color: darkgrey;
+    color: aliceblue;
+    grid-column: 2/3;
+}
+
+input[type=reset] {
+
+    padding: 10px;
+    background-color: darkgrey;
+    color: aliceblue;
+    grid-column: 1/2;
+    width: 50%;
+}

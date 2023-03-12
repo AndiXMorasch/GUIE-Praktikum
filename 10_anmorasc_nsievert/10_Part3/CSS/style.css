@@ -1,0 +1,34 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.website{
+    height: 100%;
+    width: 100%;
+
+}
+
+.anzeigefeld{
+    margin-top: 15px;
+    margin-left: auto; 
+    margin-right: auto;
+    width: 90%;
+    height: 200px;
+    background-color: gainsboro;
+    border: 1px solid black;
+}
+
+.t{
+    text-align: center;
+}
+
+.text{
+    margin-top: 15px;
+}
+
+#bold{
+    font-weight: 700;
+    margin-top: 10px;
+}

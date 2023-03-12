@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="de">
+   <head>
+      <meta charset="utf-8" />
+      <title>form</title>
+      <link href = "./CSS/style.css" rel = "stylesheet">
+   </head>
+   <body>
+      <h1>Bitte ausfüllen und absenden</h1>
+      <form name="Formular">
+         <label for="vorname">Vorname*
+         <input id="vorname" name="vorname" placeholder="Max" required
+            pattern="[A-Z, a-z]{1,40}">
+        </label>
+         <label for="name">Name*
+         <input id="name" name="name" placeholder="Mustermann" required
+            pattern="[A-Z, a-z]{1,40}">
+         </label>
+         <label for="straße">Straße*
+         <input id="straße" name="straße" placeholder="Musterstraße" required
+            pattern="[A-Z, a-z, ß]{1,40}">
+         </label>
+         <label for="plz">Postleitzahl*
+         <input id="plz" name="plz" placeholder="deutschePLZ" required
+            pattern="[0-9]{5}" maxlength="5">
+         </label>
+         <label for="ort">Ort*
+         <input id="ort" name="ort" placeholder="Musterdorf" required
+            pattern="[A-Z, a-z]{1,40}">
+         </label><br>
+
+
+         <label class="gender" for="weiblich">
+         <input type="radio" id="weiblich" name="gender" value="weiblich" required>weiblich
+         </label>
+
+         <label class="gender" for="männlich">Geschlecht*
+         <input type="radio" id="männlich" name="gender" value="männlich" required>männlich
+         </label>
+
+         <label class="gender" for="divers">
+         <input type="radio" id="divers" name="gender" value="divers" required>
+         divers</label>
+
+         <label for="noten">
+            Ihre Note*
+            <select name="noten" id="noten" required>
+               <option value="">...</option>
+               <option value="1">sehr gut</option>
+               <option value="2">gut</option>
+               <option value="3">befriedigend</option>
+               <option value="4">ausreichend</option>
+               <option value="5">mangelhaft</option>
+               <option value="6">ungenügend</option>
+            </select>
+         </label>
+         <label for="abschluss">
+            Abschluss
+            <select name="abschluss" id="abschluss">
+               <option value="">...</option>
+               <option value="B.Eng.">B.Eng.</option>
+               <option value="B.A.">B.A.</option>
+               <option value="B.Sc.">B.Sc.</option>
+               <option value="B.???">B.???</option>
+            </select>
+         </label>
+         <label for="email">EmailId
+         <input type="email" name="email" id="email" placeholder="mmustermann@hs-Osnabrueck.de">
+         </label>
+         <label for="handy">Handy
+         <input id="handy" name="handy"
+            type="tel"
+            pattern="[0]{1}[0-9]{4,10}"
+            maxlength="11">
+         </label>
+         <label for="bemerkungen">Bemerkungen
+         <textarea id="bemerkungen" name="bemerkungen"></textarea>
+          <br>
+         </label>
+
+         <input type="reset" value="Zurücksetzen" id="reset" />
+         <input type="submit" value="Submit Form" onclick="checkForm()" id="submit" />
+      </form>
+      <script src="./JS/plzarray.js"></script>
+      <script src="./JS/function.js"></script>
+   </body>
+</html>
+
+<!-- Quellen:https://tutorialehtml.com/de/html-formulare/
+https://wiki.selfhtml.org/wiki/HTML/Tutorials/Formulare/input/Radio-Buttons_und_Checkboxen
+https://www.w3schools.com/tags/att_input_type_radio.asp
+https://www.w3schools.com/tags/att_input_pattern.asp
+https://www.w3schools.com/tags/att_input_required.asp -->

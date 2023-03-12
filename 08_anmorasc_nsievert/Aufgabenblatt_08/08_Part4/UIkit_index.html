@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <title>Tierpark Musterstadt</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/uikit.css" />
+  <script src="js/uikit.min.js"></script>
+  <script src="js/uikit-icons.min.js"></script>
+</head>
+
+<body>
+  <nav id='top-bar' class="uk-navbar-container" data-uk-sticky>
+    <div class="uk-navbar-left">
+
+      <ul class="uk-navbar-nav">
+        <li class="uk-parent"><a href=""> <span uk-icon="icon: home "></span>&nbsp;Startseite</a></li>
+        <li><a href=""><span uk-icon="icon: location "></span>&nbsp;Tierpark</a></li>
+        <li><a href=""><span uk-icon="icon: credit-card "></span>&nbsp;Preise</a></li>
+        <li><a href=""><span uk-icon="icon: clock "></span>&nbsp;Öffnungszeiten</a></li>
+        <li><a href=""><span uk-icon="icon: users "></span>&nbsp;Team</a></li>
+        <li><a href=""><span uk-icon="icon: bookmark "></span>&nbsp;Impressum</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="uk-child-width-1-1@m">
+
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="ratio: 19:7; autoplay: true">
+
+      <ul class="uk-slideshow-items">
+        <li>
+          <img src="./Image/pexels-aleksey-kuprikov-3493730.jpg" alt="" uk-cover>
+          <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+            <h2 class="uk-margin-remove">Erlebnis</h2>
+            <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </li>
+        <li>
+          <img src="./Image/pexels-flickr-146083.jpg" alt="" uk-cover>
+          <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+            <h2 class="uk-margin-remove">Abenteuer</h2>
+            <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </li>
+        <li>
+          <img src="./Image/pexels-louis-3690509.jpg" alt="" uk-cover>
+          <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+            <h2 class="uk-margin-remove">Reise</h2>
+            <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </li>
+      </ul>
+
+      <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+      <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+    </div>
+  </div>
+  <p></p>
+
+  <div class="uk-section uk-section-secondary">
+    <div class="uk-container">
+      <h3 class="uk-text-center">Herzlich Willkommen im Tierpark Musterstadt!</h3>
+      <div class="uk-column-1-3">
+        <div>
+          At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+          Lorero eata smy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Justo duo dolores et ea rebum. Stet clita kasd gubergren. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+          Lorero eata smy eirmod tempor invidunt ut labore. Stet clita kasd gubergren.Stet clita kasd gubergren.Stet clita kasd gubergren.Stet clita kasd gubergren. At vero eos et accusam et justo duo dolores et ea rebum. Smy eirmod tempor invidunt
+          ut labore.
+        </div>
+      </div>
+    </div>
+  </div>
+  <h2 class="uk-text-center">Baufortschritt unseres neuen Affengeheges! <b>Eröffnung am 25.07.2022!</b></h2>
+  <progress id="js-progressbar" class="uk-progress" value="10" max="100"></progress>
+
+  <script>
+    UIkit.util.ready(function() {
+      var bar = document.getElementById('js-progressbar');
+      var animate = setInterval(function() {
+        bar.value += 0.1;
+        if (bar.value >= bar.max) {
+          clearInterval(animate);
+        }
+      }, 1000);
+    });
+  </script>
+  <br><br>
+  <div class="uk-child-width-1-3@m" uk-grid>
+    <div>
+      <div class="uk-card uk-card-default">
+        <div class="uk-container">
+          <div class="uk-card-media-top; uk-text-center">
+            <img src="./Image/pexels-george-lebada-567540.jpg" alt="" width="500">
+          </div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title">Ob zu Boden ...</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="uk-card uk-card-default">
+        <div class="uk-card-body">
+          <h3 class="uk-card-title">... in der Luft ...</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+        </div>
+        <div class="uk-card-media-bottom; uk-text-center">
+          <img src="./Image/pexels-pixabay-37833.jpg" alt="" width="500">
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="uk-card uk-card-default">
+        <div class="uk-container">
+          <div class="uk-card-media-top; uk-text-center">
+            <img src="./Image/pexels-fox-213399.jpg" alt="" width="500">
+          </div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title">... oder im Wasser!</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="uk-section uk-section-muted">
+    <div class="uk-container">
+      <h2 class="uk-text-center">Überzeugen Sie sich selbst:</h2>
+      <div class="uk-grid-match uk-child-width-expand@s uk-text-center" uk-grid>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body">
+            <h3 class="uk-card-title">Attraktionen!</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body">
+            <h3 class="uk-card-title">Theater!</h3>
+            <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body">
+            <h3 class="uk-card-title">Essen!</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="uk-section uk-section-muted uk-preserve-color">
+    <div class="uk-container">
+
+      <div class="uk-panel uk-margin-medium">
+        <h2 class="uk-text-center">Aktuelle Umfragen und Besucherbewertungen!</h2>
+      </div>
+      <div class="uk-grid-match uk-child-width-expand@m" uk-grid>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="uk-section">
+    <article class="uk-article">
+      <div class="uk-container">
+        <h1 class="uk-article-title"><a class="uk-link-reset" href="">Danksagung an unser Team!</a></h1>
+
+        <p class="uk-article-meta">Written by <a href="#">Thomas Peter</a> on 16 April 2017. Posted in <a href="#">Blog</a></p>
+
+        <p class="uk-text-lead">Danke für Ihr Engagement während dieser schwierigen Zeit!</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+          consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+        <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+          labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+          dolor sit amet.
+
+          Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis
+          dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        <p>
+          Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu
+          feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+        <p>
+          Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+          magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+        <p>
+          Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.
+        <p>
+          At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+          labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+          sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum
+          dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+        <p>
+          Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+          Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+          Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+          At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus.</p>
+
+        <div class="uk-grid-small uk-child-width-auto" uk-grid>
+          <div>
+            <a class="uk-button uk-button-text" href="#">Read more</a>
+          </div>
+          <div>
+            <a class="uk-button uk-button-text" href="#">5 Comments</a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+  <div class="uk-container">
+    <ul class="uk-comment-list">
+      <li>
+        <article class="uk-comment uk-visible-toggle" tabindex="-1">
+          <header class="uk-comment-header uk-position-relative">
+            <div class="uk-grid-medium uk-flex-middle" uk-grid>
+              <div class="uk-width-auto">
+                <img class="uk-comment-avatar" src="./Image/pexels-kaboompics-com-6347.jpg" width="80" height="80" alt="">
+              </div>
+              <div class="uk-width-expand">
+                <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Daniela Schmidt</a></h4>
+                <p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset" href="#">1 day ago</a></p>
+              </div>
+            </div>
+            <div class="uk-position-top-right uk-position-small uk-hidden-hover"><a class="uk-link-muted" href="#">Reply</a></div>
+          </header>
+          <div class="uk-comment-body">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+          </div>
+        </article>
+        <ul>
+          <li>
+            <article class="uk-comment uk-comment-primary uk-visible-toggle" tabindex="-1">
+              <header class="uk-comment-header uk-position-relative">
+                <div class="uk-grid-medium uk-flex-middle" uk-grid>
+                  <div class="uk-width-auto">
+                    <img class="uk-comment-avatar" src="./Image/pexels-tomaz-barcellos-1987301.jpg" width="80" height="80" alt="">
+                  </div>
+                  <div class="uk-width-expand">
+                    <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Luisa Groß</a></h4>
+                    <p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset" href="#">4 days ago</a></p>
+                  </div>
+                </div>
+                <div class="uk-position-top-right uk-position-small uk-hidden-hover"><a class="uk-link-muted" href="#">Reply</a></div>
+              </header>
+              <div class="uk-comment-body">
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                  gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="uk-comment uk-visible-toggle" tabindex="-1">
+              <header class="uk-comment-header uk-position-relative">
+                <div class="uk-grid-medium uk-flex-middle" uk-grid>
+                  <div class="uk-width-auto">
+                    <img class="uk-comment-avatar" src="./Image/pexels-elle-hughes-1680172.jpg" width="80" height="80" alt="">
+                  </div>
+                  <div class="uk-width-expand">
+                    <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Timo Klein</a></h4>
+                    <p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset" href="#">9 days ago</a></p>
+                  </div>
+                </div>
+                <div class="uk-position-top-right uk-position-small uk-hidden-hover"><a class="uk-link-muted" href="#">Reply</a></div>
+              </header>
+              <div class="uk-comment-body">
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                  gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+              </div>
+              <br>
+            </article>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <p></p>
+    <article class="uk-comment uk-visible-toggle" tabindex="-1">
+      <header class="uk-comment-header uk-position-relative">
+        <div class="uk-grid-medium uk-flex-middle" uk-grid>
+          <div class="uk-width-auto">
+            <img class="uk-comment-avatar" src="./Image/pexels-kevin-bidwell-3863793.jpg" width="80" height="80" alt="">
+          </div>
+          <div class="uk-width-expand">
+            <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Michael Meier</a></h4>
+            <p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset" href="#">11 days ago</a></p>
+          </div>
+        </div>
+        <div class="uk-position-top-right uk-position-small uk-hidden-hover"><a class="uk-link-muted" href="#">Reply</a></div>
+      </header>
+      <div class="uk-comment-body">
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+          no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+      </div>
+      <br>
+    </article>
+    <article class="uk-comment uk-visible-toggle" tabindex="-1">
+      <header class="uk-comment-header uk-position-relative">
+        <div class="uk-grid-medium uk-flex-middle" uk-grid>
+          <div class="uk-width-auto">
+            <img class="uk-comment-avatar" src="./Image/pexels-katie-e-3671083.jpg" width="80" height="80" alt="">
+          </div>
+          <div class="uk-width-expand">
+            <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Mia Müller</a></h4>
+            <p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset" href="#">13 days ago</a></p>
+          </div>
+        </div>
+        <div class="uk-position-top-right uk-position-small uk-hidden-hover"><a class="uk-link-muted" href="#">Reply</a></div>
+      </header>
+      <div class="uk-comment-body">
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+          no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+      </div>
+    </article>
+    <p></p>
+  </div>
+  <div class="uk-section uk-section-secondary">
+    <div class=" uk-container">
+      <div uk-grid>
+        <div class="uk-width-expand@m">
+          <h4>Contact</h4>
+          <p><span uk-icon="icon: location "></span>&nbsp;Example street 2, Osnabrück, Germany</p>
+          <p><span uk-icon="icon: receiver "></span>&nbsp;0472 946-123</p>
+          <p><span uk-icon="icon: mail "></span>&nbsp;info@tierpark-musterstadt.de</p>
+          <p><span uk-icon="icon: clock "></span>&nbsp;Öffnungszeiten:</p>
+          <p>Mo. - Fr. 09:00 Uhr - 20:00 Uhr</p>
+          <p>Sa. - So. 09:00 Uhr - 22:00 Uhr</p>
+        </div>
+        <div class="uk-width-1-2@m">
+          <h4>About the company</h4>
+          <p><b>Besuchen Sie uns auch auf unseren Social Media Kanälen!</b></p>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+          <div class="uk-grid-divider uk-child-width-1-3@s uk-text-center uk-text-secondary" uk-grid>
+            <div>
+              <a href="https://www.hs-osnabrueck.de/" class="uk-icon-button uk-text-secondary" uk-icon="twitter"></a>
+            </div>
+            <div>
+              <a href="https://www.hs-osnabrueck.de/" class="uk-icon-button uk-text-secondary" uk-icon="facebook"></a>
+            </div>
+            <div>
+              <a href="https://www.hs-osnabrueck.de/" class="uk-icon-button uk-text-secondary" uk-icon="youtube"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+<!-- Quellen: https://getuikit.com/
+https://getuikit.com/docs/introduction
+Bilder (Creative Commons 0 Lizenz) von: https://www.pexels.com/de-de/creative-commons-images/
+-->
